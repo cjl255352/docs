@@ -28,21 +28,31 @@ module.exports = ctx => ({
         items: [
           {
             text: "钉钉小程序框架",
-            link: '/e-app/',
-          },
-          {
-            text: "氚云",
-            link: '/e-app/',
-          },
-          {
-            text: "vue",
-            link: '/e-app/',
+            items: [
+              {
+                text: "指南",
+                link: "/e-app/guide/"
+              },
+              {
+                text: "组件",
+                link: "/e-app/components/"
+              },
+              {
+                text: "快速渲染",
+                link: "/e-app/render/"
+              }
+            ]
           }
         ]
       }
     ],
     // 侧边栏
     sidebar: {
+      '/e-app/guide/': [
+        ['', '指南'],
+        ['open-dev/', '开放平台'],
+        ['ide/', '开发工具'],
+      ],
       '/e-app/render/': [
         ['', '介绍'],
         'list',
@@ -70,16 +80,7 @@ module.exports = ctx => ({
             'base/user-chooser'
           ]
         },
-        ['/e-app/components/menu/', '菜单组件'],
-        {
-          title: '其他组件',
-          collapsable: false,
-          sidebarDepth: 2,
-          children: [
-            ['e-appother/', '介绍'],
-            'e-app/other/list',
-          ]
-        }
+        ['/e-app/components/menu/', '菜单组件']
       ]
     }
   },
