@@ -92,19 +92,19 @@ sidebarDepth: 2
 
 ### 域名设置
 
-文件位置：`src\app.js`，globalData.host字段，此字段会加在所有请求之前。
+文件位置：`src\app.js`，`globalData.host`字段，此字段会加在所有请求之前。
 
 ### 初始化页组织名称
 
-文件位置：`src\app.js`，globalData.corp字段，此字段会显示在登录载入页面的下方。
+文件位置：`src\app.js`，`globalData.corp`字段，此字段会显示在登录载入页面的下方。
 
 ### 组织logo
 
-文件位置：`src\app.js`，globalData.logo字段，logo会显示在组织名称的正上方。
+文件位置：`src\app.js`，`globalData.logo`字段，logo会显示在组织名称的正上方。
 
 ### token刷新间隔
 
-文件位置：`src\api\sys\login.js`，REFRESH_INTERVAL字段，默认15分钟，单位毫秒。
+文件位置：`src\api\sys\login.js`，`REFRESH_INTERVAL`字段，默认15分钟，单位毫秒。
 
 ## 样式
 

@@ -55,8 +55,8 @@ module.exports = ctx => ({
       ],
       '/e-app/render/': [
         ['', '介绍'],
-        'list',
-        'form'
+        ['list', 'listPage'],
+        ['form', 'formPage']
       ],
       '/e-app/components/': [
         {
@@ -80,7 +80,9 @@ module.exports = ctx => ({
             'base/user-chooser'
           ]
         },
-        ['/e-app/components/menu/', '菜单组件']
+        ['/e-app/components/menu/', '菜单组件'],
+        ['/e-app/components/list/', '列表组件'],
+        ['/e-app/components/form/', '表单组件']
       ]
     }
   },
