@@ -27,7 +27,7 @@
 |address|string|''|
 |cascader|object|''|
 |date-picker|string|''|
-|dept-picker|array|[]|
+|dept-chooser|array|[]|
 |input|string|''|
 |interval|array|['', '']|
 |picker|string、object|''|
